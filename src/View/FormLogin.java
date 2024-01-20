@@ -49,6 +49,7 @@ public class FormLogin extends javax.swing.JFrame {
         jLabel25.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel25.setText("USERNAME");
 
+        txtUsername.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtUsername.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtUsernameKeyTyped(evt);
