@@ -1511,7 +1511,7 @@ public class FormPerhitungan extends javax.swing.JFrame {
     private void btnTampilHasilTarifActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTampilHasilTarifActionPerformed
         // TODO add your handling code here:
         int rowTable = tblCD.getRowCount();
-        int rowJenis = cbJenis.getItemCount();
+        int rowJenis = cbJenis.getItemCount()-1;
 
         if (rowTable != rowJenis) {
             JOptionPane.showMessageDialog(null, "Data barang belum ditambahkan seluruhnya, Silahkan di Inpur Terlebih Dahulu!!");
