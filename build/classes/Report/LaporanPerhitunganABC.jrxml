@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LaporanPerhitunganABC" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="657e486d-6ed2-4d7a-a17b-30809cd04d97">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="nea"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *FROM tb_hasil]]>
+	</queryString>
+	<field name="Id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="unit_produk" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="unit_produk"/>
+		<property name="com.jaspersoft.studio.field.label" value="unit_produk"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="beban_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="beban_unit"/>
+		<property name="com.jaspersoft.studio.field.label" value="beban_unit"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="kwh" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="kwh"/>
+		<property name="com.jaspersoft.studio.field.label" value="kwh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="inspeksi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="inspeksi"/>
+		<property name="com.jaspersoft.studio.field.label" value="inspeksi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="produk" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="produk"/>
+		<property name="com.jaspersoft.studio.field.label" value="produk"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="luas_area" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="luas_area"/>
+		<property name="com.jaspersoft.studio.field.label" value="luas_area"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="bahan_baku" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="bahan_baku"/>
+		<property name="com.jaspersoft.studio.field.label" value="bahan_baku"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="biaya_tkl" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="biaya_tkl"/>
+		<property name="com.jaspersoft.studio.field.label" value="biaya_tkl"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="biaya_overhead" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="biaya_overhead"/>
+		<property name="com.jaspersoft.studio.field.label" value="biaya_overhead"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="total_hpp" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="total_hpp"/>
+		<property name="com.jaspersoft.studio.field.label" value="total_hpp"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="hpp_unit" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="hpp_unit"/>
+		<property name="com.jaspersoft.studio.field.label" value="hpp_unit"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<field name="jenis" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="jenis"/>
+		<property name="com.jaspersoft.studio.field.label" value="jenis"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tb_hasil"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="91" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="70" uuid="a132d9c4-0315-4339-a924-ea0920e67765"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="33" width="530" height="26" uuid="05c781a0-edd4-40cd-867d-456a74d36b9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PT. BINTAN CAKRA MANDIRI SUKSES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="11" width="530" height="22" uuid="b3a7b3f3-6025-48aa-9a10-181bffc5decb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN HASIL PERHITUNGAN HPP METODE ABC]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="16" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="30" uuid="c5b6f5f4-dec6-4a3c-92df-e367e8e428ee"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="335" y="0" width="100" height="30" uuid="e635f0dd-447d-4393-a51a-ccf673d793dc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b1d83abb-6b1f-476e-9bfa-67f66874240d"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL HPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="e50c65ba-1674-4f99-b9c7-9a587140bf99">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="659dc9f1-1177-43f2-92fb-4591cf3aba81"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JENIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="0" width="120" height="30" uuid="0c27a351-b45a-4a4f-bcd8-eee5e533cb50">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d59c629-c4f8-44fd-a6aa-90792844e5a0"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HPP/ UNIT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="135" height="30" uuid="af269cbc-d8a4-41c3-9691-c30bc364f5a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f9bc566-78bd-4bc6-a247-6ececb5a5b0b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OVERHEAD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="30" uuid="422d8965-f441-4247-b767-ce0ee9e6e8ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca0812cb-3f51-45d2-8579-79aa9daba231"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TKL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="30" uuid="33c83833-516e-4204-9752-26c6172f705d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="200" y="0" width="135" height="30" uuid="120b9145-2d94-4592-82b0-cfa8eaf457be">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f9bc566-78bd-4bc6-a247-6ececb5a5b0b"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{biaya_overhead}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="0" width="100" height="30" uuid="cb857c80-35af-43fd-ad7f-81749ff68af2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b1d83abb-6b1f-476e-9bfa-67f66874240d"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total_hpp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="435" y="0" width="120" height="30" uuid="809cd8dc-9047-4f2a-a1a5-152b8644454c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d59c629-c4f8-44fd-a6aa-90792844e5a0"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{hpp_unit}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="30" uuid="56795d3f-5bda-454b-bb44-ae45aaf5c61a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca0812cb-3f51-45d2-8579-79aa9daba231"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{biaya_tkl}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="30" uuid="bdafee26-1bc0-4048-9864-7494a315f0b6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="659dc9f1-1177-43f2-92fb-4591cf3aba81"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{jenis}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="240" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="240" uuid="2df15292-cde5-40b8-a2d2-a2c9f260d7cb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="433" y="187" width="107" height="20" uuid="8e52d95e-cd62-467a-9cc6-d71a13017a54"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIREKTUR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="50" width="107" height="20" uuid="f7840163-4baa-4d57-b603-efbd720fbafc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MENGETAHUI]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
